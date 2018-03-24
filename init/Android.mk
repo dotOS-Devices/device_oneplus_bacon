@@ -2,6 +2,8 @@ LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 
+LOCAL_SHARED_LIBRARIES += libbase libselinux
+LOCAL_STATIC_LIBRARIES += libbase libselinux
 LOCAL_MODULE_TAGS := optional
 LOCAL_C_INCLUDES := system/core/init
 LOCAL_CFLAGS := -Wall
